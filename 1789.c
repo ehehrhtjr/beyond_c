@@ -6,17 +6,12 @@
 #include <math.h>
 
 int main() {
-	unsigned int temp=1;
-	unsigned int n = 1;
-	unsigned int S;
+	float n;
+	float S;
 
-	scanf("%d", &S);
+	scanf("%f", &S);
 
-	while (temp < S) {
-		n++;
-		temp = (n * (n + 1)) / 2;
-		
-	}
-
-	printf("%d", n-1);
+	n = (-1 + sqrt(1 + 4 * S *2)) / 2;
+	n = floor(n);
+	printf("%d",(int)n);
 }
